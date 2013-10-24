@@ -1,0 +1,14 @@
+<?php
+
+/**
+ *  Implements hook_ckeditor_plugin()
+ */
+function ckeditor_youtube_ckeditor_plugin() {
+  return array(
+    'youtube' => array(
+      'name' => 'youtube',
+      'desc' => t('This plugin allows inserting Youtube videos using embed code or just the video URL.'),
+      'path' => drupal_get_path('module', 'ckeditor_youtube') . '/',
+    )
+  );
+}

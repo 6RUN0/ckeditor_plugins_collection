@@ -1,0 +1,14 @@
+<?php
+
+/**
+ *  Implements hook_ckeditor_plugin()
+ */
+function ckeditor_backup_ckeditor_plugin() {
+  return array(
+    'backup' => array(
+      'name' => 'backup',
+      'desc' => t('Automatically saves the data in the document is changed.'),
+      'path' => drupal_get_path('module', 'ckeditor_backup') . '/',
+    )
+  );
+}

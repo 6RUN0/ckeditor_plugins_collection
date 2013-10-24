@@ -1,0 +1,6 @@
+name        = CKEditor backup plugin
+description = <a href="http://ckeditor.com/addon/backup">CKEditor backup plugin</a>
+core        = 7.x
+dependencies[] = ckeditor
+package     = User interface
+version = "7.x-.1"

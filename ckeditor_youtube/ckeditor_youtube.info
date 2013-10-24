@@ -1,0 +1,6 @@
+name        = CKEditor Youtube Plugin
+description = <a href="http://ckeditor.com/addon/youtube">CKEditor Youtube Plugin</a>
+core        = 7.x
+dependencies[] = ckeditor
+package     = User interface
+version = "7.x-.1"
