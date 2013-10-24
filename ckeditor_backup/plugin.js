@@ -62,7 +62,7 @@ CKEDITOR.plugins.add( 'backup',{
 					editor.backup();
 				},3000);
 			});
-			div.innerHTML = '<select style=" padding:0px; min-height: 25px;display: inline-block;" id="backuper_'+editor.name+'"></select>&nbsp;<input type="image" value="del" onclick="CKEDITOR.instances[\''+editor.name+'\'].backup(\'del\'); return false;" src="'+CKEDITOR.basePath+'plugins/backup/clear.png"/>';
+			div.innerHTML = '<select style=" padding:0px; min-height: 25px;display: inline-block;" id="backuper_'+editor.name+'"></select>&nbsp;<input type="image" value="del" onclick="CKEDITOR.instances[\''+editor.name+'\'].backup(\'del\'); return false;" src="'+CKEDITOR.plugins.getPath('backup')+'clear.png"/>';
 			div.onchange = editor.restore;
 			CKEDITOR.document.getById( editor.ui.spaceId?editor.ui.spaceId("bottom"): 'cke_bottom_'+editor.name ).append(new CKEDITOR.dom.node(div));
 			select = CKEDITOR.document.getById( 'backuper_'+editor.name );
